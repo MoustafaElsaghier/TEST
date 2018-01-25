@@ -1,5 +1,6 @@
 package elsaghier.example.com.test.Models;
 
+import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
@@ -11,16 +12,27 @@ import java.io.Serializable;
 public class RestaurantModel implements Serializable {
 
     @SerializedName("name")
+    @Expose
     private String name;
+
     @SerializedName("location")
+    @Expose
     private RestaurantLocation location;
+
     @SerializedName("average_cost_for_two")
+    @Expose
     private String averageCostForTwo;
+
     @SerializedName("price_range")
+    @Expose
     private String priceRange;
+
     @SerializedName("currency")
+    @Expose
     private String currency;
+
     @SerializedName("featured_image")
+    @Expose
     private String featuredImage;
 
     public String getName() {
